@@ -14,7 +14,7 @@
 </head>
 
 <body data-scroll-container>
-  <section class="hero h-screen">
+  <section class="hero h-screen bg-base-200">
     <div class="hero-content text-center">
 			<div class="max-w-screen-lg">
 				<div class="flex w-full">
@@ -25,62 +25,118 @@
 					</div>
 					<div class="divider divider-horizontal"></div>
 					<div class="grid basis-1/2 card rounded-box place-items-center">
-						<h2 class="text-3xl text-italic my-5 sm:text-4xl md:text-5xl lg:text-6xl">The portfolio of an aspiring web developer</h2>
+						<h2 class="text-3xl text-italic my-5 sm:text-4xl md:text-5xl lg:text-6xl">Portfolio of an aspiring web developer</h2>
 					</div>
 				</div>
 			</div>
     </div>
   </section>
 
-	<section class="h-screen bg-base-200">
-		<h2 class="pl-5 pt-5 text-5xl font-bold text-primary-content md:text-6xl"><span class="text-primary-focus">About</span>.</h2>
-		<div class="max-w-screen-lg mx-auto h-5/6 my-auto flex flex-col justify-around">
-			<div class="flex w-full justify-center items-center flex-wrap content-evenly">
-				<img class= "h-48 w-auto rounded-full mx-4 mb-1 sm:h-56 md:h-fit" src="../img/headshot.jpg">
-				<p class="w-96 my-3 text-center px-2 text-l w-11/12 sm:text-xl sm:w-1/2 md:text-2xl md:leading-relaxed">
-					I'm a full stack developer studying at Coder Academy. I'm excited by the mix of design and problem
-					solving that development process provides. I also love how there's always something new to learn. When I'm not programming I
-					like keeping fit, cooking, climbing and gaming.
-				</p>	
-			</div>
-
-			<div class="basis-48 font-bold text-center  font-bold justify-around sm:text-xl">
-				<div class ="pb-5 flex flex-wrap justify-center space-x-10 sm:space-x-20 lg:space-x-28">
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/html.png">
-						<p>HTML</p>
-					</div>
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/css.png">
-						<p>CSS</p>
-					</div>
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/js.png">
-						<p>JavaScript</p>
-					</div>
+	<section class="h-screen bg-base-300">
+		<div class="max-w-screen-lg mx-auto h-5/6 my-auto ">
+			<h2 class="pl-7 py-4 text-5xl font-bold text-primary-content md:text-6xl"><span class="text-primary-focus">About</span>.</h2>
+			<div class="h-full flex flex-col justify-evenly">
+				<div class="flex w-full justify-around items-center flex-wrap content-evenly sm:flex-nowrap">
+					<img class= "h-48 shadow-2xl w-auto rounded-full mx-4 mb-1 sm:h-56" src="../img/headshot.jpg">
+					<p class="bg-base-100 rounded-lg w-auto my-3 text-center px-2 w-11/12 shadow-xl max-w-md
+						sm:text-xl sm:text-left sm:mr-5 md:text-2xl lg:leading-relaxed">
+						I'm a full stack developer studying at Coder Academy. I'm excited by the mix of design and problem
+						solving that development process provides. I also love how there's always something new to learn. When I'm not programming I
+						like keeping fit, cooking, climbing and gaming.
+					</p>	
 				</div>
 
-				<div class ="flex flex-wrap justify-center space-x-10 sm:space-x-20 lg:space-x-28">
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/tailwind.png">
-						<p>Tailwind</p>
+				<div class="basis-48 font-bold text-center  font-bold justify-around sm:text-xl">
+					<div class ="flex flex-wrap justify-center space-x-10 sm:space-x-20 lg:space-x-28">
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/html.png" alt="HTML logo">
+							<p>HTML</p>
+						</div>
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/css.png" alt="CSS logo">
+							<p>CSS</p>
+						</div>
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/js.png" alt="JavaScript logo">
+							<p>JavaScript</p>
+						</div>
 					</div>
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/ruby.png">
-						<p>Ruby</p>
-					</div>
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/rails.png">
-						<p>Rails</p>
-					</div>
-					<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-24">
-						<img src ="../img/git.png">
-						<p>GIT</p>
+
+					<div class ="flex flex-wrap justify-center space-x-10 sm:space-x-20 lg:space-x-28">
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/tailwind.png" alt="Tailwind logo">
+							<p>Tailwind</p>
+						</div>
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/ruby.png" alt="Ruby logo">
+							<p>Ruby</p>
+						</div>
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/rails.png" alt="Rails logo">
+							<p>Rails</p>
+						</div>
+						<div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
+							<img src ="../img/git.png" alt="Git logo">
+							<p>GIT</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
   </section>
 
+	<section class="h-fit bg-base-200">
+		<div class="max-w-screen-lg mx-auto">
+			<h2 class="pl-7 py-4 text-5xl font-bold text-primary-content md:text-6xl"><span class="text-primary-focus">Projects</span>.</h2>
+			<div class="h-full flex flex-wrap flex-column justify-around max-w-screen-md">
+				<div class="card card-side bg-base-100 shadow-xl my-5">
+					<figure class="w-52"><img src="../img/portfolio.png" alt="Screenshot of this website"></figure>
+					<div class="card-body my-auto">
+						<h2 class="card-title">This Portfolio Website</h2>
+						<ul class="list-disc">
+							<li>Single page static website built primarily in plain HTML, CSS and JavaScript</li>
+							<li>Uses Tailwind CSS and some DaisyUI components for styling</li>
+							<li>Responsive and mobile first design</li>
+							<li>Uses Locomotive Scroll Javascript library for scroll effects (currently work in progress)</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card-side bg-base-100 shadow-xl my-5">
+					<div class="card-body">
+						<h2 class="card-title">Stratego Terminal Game</h2>
+						<ul class="list-disc">
+							<li>Clone of the board game 'Stratego' as a terminal application</li>
+							<li>Local multiplayer with fully emulated game pieces</li>
+							<li>Menu system implemented with various Ruby Gems</li>
+							<li>Object-oriented implementation written in Ruby</li>
+						</ul>
+					</div>
+					<figure><img src="../img/gameboard.png" alt="Screenshot of Stratego application gameboard"></figure>
+				</div>
+
+				<div class="card card-side bg-base-100 shadow-xl my-5">
+					<figure class="w-52"><img src="../img/fitby.png" alt="Screenshot of Fitby Marketplace website"></figure>
+					<div class="card-body my-auto">
+						<h2 class="card-title">Fitby Two Sided Marketplace</h2>
+						<ul class="list-disc">
+							<li>Marketplace application connecting trainers with people looking for fitness classes</li>
+							<li>Implements user authentication and authorisation</li>
+							<li>Create read update and delete functionality</li>
+							<li>Ruby on Rails, Bulma CSS, Postgresql database, Cloudinary image hosting and Heroku deployment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>
+
+	<section class="h-screen bg-base-300">
+		<div class="max-w-screen-lg mx-auto">
+			<h2 class="pl-7 py-4 text-5xl font-bold text-primary-content md:text-6xl"><span class="text-primary-focus">Contact</span>.</h2>
+			<div class="h-full flex flex-wrap flex-column justify-around">
+			</div>
+		</div>
+	</section>
 </body>
 </html>
