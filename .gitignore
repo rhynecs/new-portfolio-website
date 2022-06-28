@@ -2,3 +2,5 @@ node_modules/
 .cache/
 src/output.css
 dist/
+package.json
+package-lock.json

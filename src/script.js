@@ -1,9 +1,5 @@
-import LocomotiveScroll from 'locomotive-scroll'
+const AOS = window.aos;
 
-const scroll = new LocomotiveScroll({
-	el: document.querySelector("[data-scroll-container]"),
-	smooth: false,
-	// tablet: { smooth: true },
-	// smartphone: { smooth: true },
-});
-
+<script>
+	AOS.init();
+</script>;
