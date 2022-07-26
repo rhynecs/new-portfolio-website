@@ -34,7 +34,7 @@
     </div>
   </section>
 
-  <section class="h-screen bg-base-300">
+  <section class="min-h-fit bg-base-300">
     <div class="max-w-screen-lg mx-auto h-5/6 my-auto">
       <h2 class="pl-7 py-4 text-5xl font-bold text-primary-content md:text-6xl">
         <span class="text-primary-focus">About</span>.
@@ -43,17 +43,19 @@
         <div class="flex w-full justify-around items-center flex-wrap content-evenly sm:flex-nowrap">
           <img class="h-48 shadow-2xl w-auto rounded-full mx-4 mb-1 sm:h-56" src="../img/headshot.jpg"
             data-aos="fade-right" />
-          <p class="bg-base-100 rounded-lg w-auto my-3 text-center px-2 w-11/12 shadow-xl max-w-md sm:text-xl sm:text-left sm:mr-5 md:text-2xl lg:leading-relaxed"
-            data-aos="fade-left">
-            I'm a full stack developer studying at Coder Academy. I'm excited
-            by the mix of design and problem solving that development process
-            provides. I also love how there's always something new to learn.
-            When I'm not programming I like keeping fit, cooking, climbing and
-            gaming.
-          </p>
+          <div class = "bg-base-100 rounded-lg my-3 text-center shadow-xl max-w-md sm:text-xl sm:text-left 
+            sm:mr-5 md:text-2xl lg:leading-relaxed" data-aos="fade-left">
+            <p class ="m-5" >
+              I'm a full stack developer that graduated from Coder Academy. I'm excited
+              by the mix of design and problem solving that development process
+              provides. I also love how there's always something new to learn.
+              When I'm not programming I like keeping fit, cooking, climbing and
+              gaming.
+            </p>
+          </div>
         </div>
 
-        <div class="basis-48 font-bold text-center font-bold justify-around sm:text-xl" data-aos="fade-up">
+        <div class="basis-48 text-center font-bold justify-evenly mt-10 sm:text-xl" data-aos="fade-up">
           <div class="flex flex-wrap justify-center space-x-10 sm:space-x-20 lg:space-x-28">
             <div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
               <img src="../img/html.png" alt="HTML logo" />
@@ -69,7 +71,7 @@
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-center space-x-10 sm:space-x-20 lg:space-x-28">
+          <div class="flex flex-wrap justify-center space-x-10 mb-10 sm:space-x-20 lg:space-x-28">
             <div class="flex flex-wrap items-center justify-around content-evenly w-12 sm:w-16 lg:w-20">
               <img src="../img/tailwind.png" alt="Tailwind logo" />
               <p>Tailwind</p>
@@ -97,56 +99,65 @@
       <h2 class="pl-7 py-4 text-5xl font-bold text-primary-content md:text-6xl">
         <span class="text-primary-focus">Projects</span>.
       </h2>
-      <div class="h-full flex flex-wrap flex-col justify-around max-w-screen-md mx-auto">
-        <div class="card card-side bg-base-100 shadow-xl my-5" data-aos="fade-right">
-          <figure class="w-52">
-            <img src="../img/portfolio.png" alt="Screenshot of this website" />
+      <div class="h-fit flex flex-wrap flex-col justify-around max-w-screen-md mx-auto">
+        <div class="card lg:card-side bg-base-100 shadow-xl my-5" data-aos="fade-right">
+          <figure class="m-5">
+            <img src="../img/portfolio.png" alt="Screenshot of this website"/>
           </figure>
-          <div class="card-body my-auto">
+          <div class="card-body">
             <h2 class="card-title">This Portfolio Website</h2>
             <ul class="list-disc">
               <li>
                 Single page static website built primarily in plain HTML, CSS
                 and JavaScript
               </li>
-              <li>
-                Uses Tailwind CSS and some DaisyUI components for styling
-              </li>
+              <li>Uses Tailwind CSS for styling</li>
               <li>Responsive and mobile first design</li>
-              <li>
-                Uses Locomotive Scroll Javascript library for scroll effects
-                (currently work in progress)
-              </li>
+              <li>Uses Locomotive Scroll Javascript library for scroll effects</li>
             </ul>
           </div>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-xl my-5" data-aos="fade-left">
+        <div class="card lg:card-side bg-base-100 shadow-xl my-5" data-aos="fade-left">
+          <figure class="m-5">
+            <img src="../img/teachyoself.png" alt="Screenshot of Teachyoself website"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Teachyoself - API</h2>
+            <ul class="list-disc">
+              <li>A platform for educational resource sharing</li>
+              <li>Group project where I was responsible for the backend API</li>
+              <li>Built on Express.js with a MongoDB database</li>
+              <li>JWT user authentication strategy with access and refresh tokens</li>
+              <li>Implements RESTful routing and validation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card lg:card-side bg-base-100 shadow-xl my-5" data-aos="fade-right">
+          <figure class="m-5">
+            <img src="../img/gameboard.png" alt="Screenshot of Stratego application gameboard" />
+          </figure>
           <div class="card-body">
             <h2 class="card-title">Stratego Terminal Game</h2>
             <ul class="list-disc">
-              <li>
-                Clone of the board game 'Stratego' as a terminal application
-              </li>
+              <li>Clone of the board game 'Stratego' as a terminal application</li>
               <li>Local multiplayer with fully emulated game pieces</li>
-              <li>Menu system implemented with various Ruby Gems</li>
               <li>Object-oriented implementation written in Ruby</li>
+              <li>Menu system implemented with various Ruby Gems</li>
             </ul>
           </div>
-          <figure>
-            <img src="../img/gameboard.png" alt="Screenshot of Stratego application gameboard" />
-          </figure>
         </div>
 
-        <div class="card card-side bg-base-100 shadow-xl my-5" data-aos="fade-right">
-          <figure class="w-52">
+        <div class="card lg:card-side bg-base-100 shadow-xl my-5" data-aos="fade-left">
+          <figure class="m-5" >
             <img src="../img/fitby.png" alt="Screenshot of Fitby Marketplace website" />
           </figure>
-          <div class="card-body my-auto">
-            <h2 class="card-title">Fitby Two Sided Marketplace</h2>
+          <div class="card-body">
+            <h2 class="card-title">Fitby</h2>
             <ul class="list-disc">
               <li>
-                Marketplace application connecting trainers with people
+                Two-sided marketplace application connecting trainers with people
                 looking for fitness classes
               </li>
               <li>Implements user authentication and authorisation</li>
